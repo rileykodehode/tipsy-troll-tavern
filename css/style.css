@@ -1,3 +1,18 @@
+/* Varaiables */
+:root {
+  --small-text: 1.15rem;
+  --medium-text: 1.5rem;
+  --big-text: 2.5rem;
+
+  --primary-text: #ffffff;
+  --secondary-text: #222222;
+
+  --background-1: #333333cc;
+
+  --shadow-outside: 5px 5px 10px #000;
+  --shadow-interior: 5px 5px 10px inset rgba(0, 0, 0, 0.3);
+}
+
 /* CSS Reset */
 * {
   margin: 0;
@@ -5,16 +20,88 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url(/images/indoor-tavern.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 header {
-  background-color: blue;
+  background-color: var(--background-1);
+  color: var(--primary-text);
   padding: 20px;
+  box-shadow: var(--shadow-outside);
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: var(--big-text);
+  font-family: "Germania One Regular";
+  font-weight: 700px;
+}
+
+header ul {
+  display: flex;
+  color: var(--secondary-text);
+  font-size: var(--medium-text);
+  gap: 20px;
+  list-style: none;
+}
+
+header li {
+  background-color: #f0f0f0;
+  padding: 10px 25px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-interior);
 }
 
 main {
-  background-color: grey;
+  height: 1024px;
+  padding: 20px;
+  margin: 30px 60px;
+  color: var(--primary-text);
+}
+
+main h2 {
+  font-size: var(--big-text);
+}
+
+main h3 {
+  font-size: var(--medium-text);
+}
+
+main p h4 {
+  font-size: var(--small-text);
+}
+
+section {
+  display: flex;
+  gap: 60px;
+}
+
+.hero-card {
+  display: flex;
+  flex-flow: column;
+  background-color: var(--background-1);
+  border-radius: 14px;
+  padding: 20px;
+  margin: 20px 0px;
+  min-height: 10%;
+  max-width: 33%;
+}
+
+.hero-card img {
+  margin: 20px;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid #222222;
 }
 
 footer {
-  background-color: black;
+  display: flex;
+  justify-content: end;
+  background-color: #000000cc;
   color: white;
+  padding: 20px;
 }
