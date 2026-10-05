@@ -4,17 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/emojione--beer-mug.svg" />
     <title>Tipsy Troll Tavern</title>
   </head>
   <body>
     <header>
-      <h1>Tipsy Troll Tavern</h1>
-      <ul>
-        <li>Hjem</li>
-        <li>Drikke</li>
-        <li>Mat</li>
-        <li>Kontakt</li>
-      </ul>
+      <div>
+        <img src="images/emojione--clinking-beer-mugs.svg" alt="" />
+        <h1>Tipsy Troll Tavern</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>Hjem</li>
+          <li>Drikke</li>
+          <li>Mat</li>
+          <li>Kontakt</li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="hero-title">
@@ -23,9 +29,12 @@
       </div>
       <section class="hero">
         <div class="hero-card">
-          <h2>Dagens Spesial</h2>
-          <h3>Dreamweaver's Delight</h3>
-          <img src="images/beer.jpg" alt="" />
+          <h3>Dagens Spesial</h3>
+          <h2>Dreamweaver's Delight</h2>
+          <img
+            src="images/beer.jpg"
+            alt="A tall glass of beer that's overflowing"
+          />
           <p>
             Boblende, magiske og satisfying glass med øl. Fyller uansett hvem
             sitt mana. Bestill det med det saftigste biffsteak og du kommer ut
@@ -40,6 +49,30 @@
             mat og kjekk atmosphere til alle reisende. Her finner du en flott
             meny med saftige steakhouse og deilige utvalg av drikker.
           </p>
+          <img
+            src="images/outisde-tavern.jpg"
+            alt="Outside of the tavern, infront of a river in the middle of a forest."
+          />
+        </div>
+      </section>
+
+      <!-- Kontaktseksjon -->
+      <section class="contact-section">
+        <div class="contact">
+          <h3>Her kan du gi oss et magisk brev!</h3>
+          <form action="name">
+            <label for="name">Navn</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Skriv navnet ditt her..."
+            />
+          </form>
+          <form action="">
+            <label for="message">Melding</label>
+            <textarea id="message" rows="5"></textarea>
+          </form>
+          <button type="submit">Send</button>
         </div>
       </section>
     </main>

@@ -11,6 +11,8 @@
 
   --shadow-outside: 5px 5px 10px #000;
   --shadow-interior: 5px 5px 10px inset rgba(0, 0, 0, 0.3);
+
+  --border-default: 2px solid #222222;
 }
 
 /* CSS Reset */
@@ -32,6 +34,17 @@ header {
   color: var(--primary-text);
   padding: 20px;
   box-shadow: var(--shadow-outside);
+  position: sticky;
+  top: 0;
+}
+
+header div {
+  display: flex;
+  gap: 20px;
+}
+
+header img {
+  width: 50px;
 }
 
 header h1 {
@@ -50,13 +63,17 @@ header ul {
 }
 
 header li {
-  background-color: #f0f0f0;
+  color: var(--primary-text);
+  background-image: url(/images/woodgrain.jpg);
+  background-size: cover;
   padding: 10px 25px;
   border-radius: 14px;
   box-shadow: var(--shadow-interior);
 }
 
 main {
+  display: flex;
+  flex-flow: column;
   height: 1024px;
   padding: 20px;
   margin: 30px 60px;
@@ -95,7 +112,53 @@ section {
   margin: 20px;
   max-width: 100%;
   border-radius: 8px;
-  border: 2px solid #222222;
+  border: var(--border-default);
+}
+
+.hero-card h2 {
+  font-family: "Germania One Regular";
+}
+
+.contact-section {
+  margin: 20px 0px;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column;
+  background-color: var(--background-1);
+  width: 40%;
+  padding: 20px;
+  margin: 60px 0;
+  border-radius: 14px;
+}
+
+#name,
+#message {
+  display: flex;
+  background-image: url(/images/paper.jpg);
+  background-size: cover;
+  font-size: var(--small-text);
+  color: #000;
+  padding: 5px;
+  margin: 10px 0px;
+  border-radius: 8px;
+  border: var(--border-default);
+}
+
+#message {
+  resize: vertical;
+  height: 200px;
+  min-height: 100px;
+  max-height: 300px;
+}
+
+button {
+  background-color: #f0f0f0;
+  padding: 10px 25px;
+  border-radius: 14px;
+  width: 100px;
+  border: var(--border-default);
 }
 
 footer {
